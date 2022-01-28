@@ -51,6 +51,7 @@ At ML3, you should also hand the final course product (by inviting us to your gi
 The problem sets are simple exercises designed to help students to “get their hands in the data”. They will be available on Lola and should be handed in there. These problem sets will take the form of Jupyter notebooks, that will have to be converted in pdf before being handed in.
 
 ## Evaluation
+
 | Detail                                                                                                              | Grading decomposition  |
 | ------------------------------------------------------------------------------------------------------------------- | ---------------------- |
 | **Problem sets (individual)**                                                                                       | **15%** (5% each)      |
