@@ -11,10 +11,10 @@ The **Homework** column details the homework, that are either project's mileston
 
 | Week   | Lecture                                         | Practice                               | Homework: project milestones, problem sets    |
 |--------|-------------------------------------------------|----------------------------------------|-------------------------------------------|
-| 10-Feb | Introduction [slides](https://malkaguillot.github.io/ECON2206-Data-Management/lectures/0-overview.html) | Using [git](https://malkaguillot.github.io/ECON2206-Data-Management/lectures/1-git.html) and [Markdown]() | Installing python using the guide ; getting ready with git         |
+| 10-Feb | Introduction [slides](https://malkaguillot.github.io/ECON2206-Data-Management-2022/lectures/0-overview.html) | Using [git](https://malkaguillot.github.io/ECON2206-Data-Management-2022/lectures/1-git.html) and [Markdown]() | Installing python using the guide ; getting ready with git         |
 | 17-Feb | Introduction to Python [slides]()               | Python practice                        |                                           |
 | 24-Feb | The importance of visualization principles (1h) [slides]() | Pandas 1: introduction (2h) [slides]() | **PS1**:  simple pandas + graphs (due:10/03) |
-| 03-Mar | Webscraping theory [notebook]()                 | Webscraping practice [notebook]()      |  Start thinking about a project idea      |
+| 03-Mar | Webscraping theory [notebook](https://github.com/malkaguillot/ECON2206-Data-Management-2022/blob/main/lectures/3-data-collection.ipynb)                 | Webscraping practice [notebook]()      |  Start thinking about a project idea      |
 | 10-Mar | ML1: intro + unsupervised [notebook]()          |  Brainstorming on project ideas ; Starting webscraping of project |                                           |
 | 17-Mar | ML2: supervised  [notebook]()                   |  Practice ML [notebook]()              |   **PS2** on ML (due: 31/03)                  |
 | 24-Mar | Natural Language Processing [slides]()          |  NLP [notebook]()                      | ML1: Having decided on the project idea       |
