@@ -17,8 +17,6 @@
 
 2. [Using Git for collaboration](#hw)
 
-Notes: my notes
-
 <!--
 Réfernce :
 - manuel git : https://happygitwithr.com/
@@ -28,6 +26,8 @@ Réfernce :
 - gitlab cheatsheet https://about.gitlab.com/images/press/git-cheat-sheet.pdf
 -->
 
+Notes:
+Throughout this course, we'll be using a platform called GitHub. GitHub is a popular code hosting platform. It has lots of features that make version control and collaboration easier.
 
 ---
 
@@ -35,6 +35,7 @@ Réfernce :
 # The importance of version control
 
 <html><div style='float:left'></div><hr color='#EB811B' size=1px width=796px></html>
+
 
 --
 
@@ -45,10 +46,57 @@ Réfernce :
 Version control is a way to keep track of changes to code, text, and documents. And data and outputs.
 
   - It gives you an organized revision history
-  - It lets you experiment without fear
+  - It lets you experiment *without fear*
   - It lets you go back and forth between many different versions of the same file, and see a list of the differences
   -  It makes (the technical aspects of) collaboration a breeze
   -  It lets you and your collaborators work on different versions and then merge them
+
+Notes:
+Version control refers to the techniques for managing changes to software and code, and easily going back and forth between older and new versions of a code base. Getting familiar with GitHub and all of its tools can take some time, but the benefits for open science and streamlined collaboration are worth it.
+
+--
+
+## From local to distributed version control system
+- <bcolor>Local</bcolor>: everything is on your computer
+<img data-src="./images/git-local-vc.png"  style="height: 350px; position:relative;     margin-left: auto;margin-right: auto;display: block" >
+
+[$-$]() No collaboration
+
+[$-$]() Not possible to retrieve files if the local machine crashes
+
+--
+
+## From local to distributed version control system
+- <bcolor>Centralized</bcolor>:
+  - all files on 1 server
+  - many collaborators checkout files
+<img data-src="./images/git-centralized-vc.png"  style="height: 350px; position:relative;     margin-left: auto;margin-right: auto;display: block" >
+
+[$+$]() Collaboration
+
+[$-$]() Not possible to retrieve files if the central server crashes
+
+Notes:
+Each collaborator only have a working copy. Only the server has the full history.
+
+--
+
+## From local to distributed version control system
+- <bcolor>Distributed</bcolor>:
+  - one or more servers
+  - many collaborators
+<img data-src="./images/git-distributed-vc.png"  style="height: 350px; position:relative;     margin-left: auto;margin-right: auto;display: block" >
+
+[$+$]() Collaboration
+
+[$+$]() Each user has their own repository and a working copy
+
+Notes:
+**CCL**: GitHub is a useful tool because it removes a lot of the obstacles that we usually face when we are collaborating with others.
+- Instead of *saving multiple versions* of the same document, GitHub lets us iterate on the same document while recording how it has changed over time.
+- Rather than sending collaborators *messily named documents*, everyone can work from the same GitHub repository.
+- GitHub also has tools for *resolving editing conflicts* between collaborators and creating a clear workflow.
+
 
 --
 
@@ -83,7 +131,7 @@ This type of version control, where you put dates or number of things is not eff
 
 - [GitHub](https://github.com/)   <!-- .element: class="fragment" data-fragment-index="2" -->
 
-  - It's important to realise that Git and GitHub are distinct things.
+  - It's important to realize that Git and GitHub are distinct things.
 
   - GitHub = <bcolor>online hosting platform</bcolor> that provides an array of services built on top of the Git system. <!-- .element: class="fragment" data-fragment-index="2" -->
     - (Similar platforms include Bitbucket and GitLab.)
@@ -105,9 +153,11 @@ $\rightarrow$ There is a learning curve, but I promise you it's worth it.
 
 - Anything involving coding (even latex)
 
+<img data-src="./images/git_github.jpg"  style="height: 400px; position:relative;     margin-left: auto;margin-right: auto;display: block" >
+
 Notes:
 - [Central]() role of VC in global software development
-- [Research]() : Git(Hub) helps to operationalise the ideals of **open science** and **reproducibility**.
+- [Research]() : Git(Hub) helps to operationalize the ideals of **open science** and **reproducibility**.
 
 ---
 
@@ -116,7 +166,7 @@ Notes:
 
 <html><div style='float:left'></div><hr color='#EB811B' size=1px width=796px></html>
 
-1. Install [Git](https://git-scm.com/downloads) (Linux, Mac, Windows)
+1. Install [Git](https://git-scm.com/downloads) (Linux, Mac, Windows) if not already installed
 
 2. Git comes with a command line interface (powerful!).
 
@@ -124,14 +174,13 @@ Notes:
 
 --
 
-## First steps
+## First steps: Setup [GitHub account](https://github.com/)
 
-- Login to gitlab using you uliege address [segi instructions](https://my.segi.uliege.be/cms/c_10828225/fr/mysegi-gitlab)
+- Navigate to [GitHub's homepage](https://github.com/) + "Sign Up"
+  - Go through the account setting steps ("Verify your email address"...)
 
-- create ssh key https://docs.gitlab.com/ee/ssh/index.html
-  1. open a terminal
-  2. ```ssh-keygen -t ed25519 -C "comment"
+<img data-src="./images/github sign up.png"  style="height: 400px; position:relative;     margin-left: auto;margin-right: auto;display: block" >
 
-More details on [gitlab docs](https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html#configure-git)
+Navigate to GitHub's homepage. Navigate to "Sign Up" in the top right hand side of the page.
 
 --
