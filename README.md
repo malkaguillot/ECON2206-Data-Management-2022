@@ -9,7 +9,7 @@ The **Lecture** column lists the content associated with theoretical presentatio
 The **practice** column details the content associated with practical sessions.
 The **Homework** column details the homework, that are either project's milestones or problem sets.
 
-| Week   | Lecture                                         | Practice                               | Homework: project milestones, problem sets    |
+| Week   | Lecture                                         | Practice                               | Problem sets, project milestones    |
 |--------|-------------------------------------------------|----------------------------------------|-------------------------------------------|
 | 10-Feb | Introduction [slides](https://malkaguillot.github.io/ECON2206-Data-Management-2022/lectures/0-overview.html) | Using [git](https://malkaguillot.github.io/ECON2206-Data-Management-2022/lectures/1-git.html) and [Markdown]() | Installing python using the guide ; getting ready with git         |
 | 17-Feb | Introduction to Python [slides]()               | Python practice                        |                                           |
@@ -55,8 +55,8 @@ We will discuss about your proposed project several times so that we can evaluat
 - ML3: Final presentation (5 minutes)
 At ML3, you should also hand the final course product (by inviting us to your gitlab folder).
 
-## Homeworks
-The homeworks are simple exercises designed to help you to “get their hands in the data”. They will be available on Lola and should be handed in there. These homeworks will take the form of Jupyter notebooks, that will have to be converted in pdf before being handed in.
+## Problem sets
+The Problem sets are simple exercises designed to help you to “get their hands in the data”. They will be available on Lola and should be handed in there. These problem sets will take the form of Jupyter notebooks, that will have to be converted in pdf before being handed in.
 
 ## Evaluation
 
