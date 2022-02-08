@@ -106,7 +106,7 @@ Belgique
 
 --
 
-## Introduction: You are you ?
+## Introduction: Who are you ?
 
 
 <div style="position:relative;  text-align: center;" >
@@ -114,7 +114,7 @@ Belgique
 
 --
 
-## What do you want to learn during the class?
+## What do you expect to learn during the class?
 
 
 <div style="position:relative;  text-align: center;" >
@@ -644,7 +644,7 @@ No general texbook. Specific references will be given when corresponding subject
 
 - [Introduction](https://pp4rs.github.io/pp4rs-python/intro.html) to python, pandas, plotting
 
-- [Stackoverflow](https://stackoverflow.com/): all the answers are there, but you have to ask the right question. 
+- [Stackoverflow](https://stackoverflow.com/): all the answers are there, but you have to ask the right question.
 
 ---
 
