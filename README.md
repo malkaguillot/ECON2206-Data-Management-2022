@@ -31,24 +31,32 @@ I would like you to chose a standard [research or policy or business] question t
 
 You will develop a project abiding by the good practices taught in class. The project should incorporate:
 
-- a gitlab folder with at least 10 commits & 2 branches that are eventually merged
-    - including a readme explaining the architecture and linking to the address where the app is deployed.
-- Include an original data collection step (webscraping)
-- 4 exhibits: 2 tables and 2 Figures (using different commands)
-- The possibility to modify the visualization using button for at least one exhibit
-- The main output should be a `dash page` that you develop on `Herokuapp`
+- Include an original **data collection step** (webscraping)
+- The **main output** should be a `dash page` that you develop on `Herokuapp`, and should include;
+  - Some text, with brief explanations regarding : the question asked, the choice and the nature of the data (you do not have to include the data steps [collection & cleaning] here), the exhibits (should have reading notes) and what you conclude from them.
+  - 4 exhibits: 2 tables and 2 Figures (using different commands)
+  - The possibility to modify the visualization using button for at least one exhibit
+
+**Submission format**: Invite @malkaguillot and @michel to collaborate on your GitHub repository by the due date.
+
+    - This means, we expect well version controlled work.
+    - a github folder with at least 5 commits (bonus if you have several development branches!)
+    - Tag your final submission using the following `git command git tag -a 1.0 -m "submitted version"`.
+    - You must have a `README.md` in the main directory with:
+      - instructions on how we can build the assignment & what it does;
+      - a link to the deploymed application.
 
 Projects should be realized by group of 1 or 2 (one group of 3 if there is an odd number of remaining students).
 
-The project will be organized around the following milestones, materialized by a presentation in class:
+**Project milestones**
+We will discuss about your proposed project several times so that we can evaluate whether it is do-able within the time frame. The project will be organized around the following milestones, materialized by a presentation in class:
 - ML1: Project idea & scraping methodology (5 minutes)
 - ML2: Visualization plan (5 minutes)
 - ML3: Final presentation (5 minutes)
 At ML3, you should also hand the final course product (by inviting us to your gitlab folder).
 
-
-## Problem sets
-The problem sets are simple exercises designed to help students to “get their hands in the data”. They will be available on Lola and should be handed in there. These problem sets will take the form of Jupyter notebooks, that will have to be converted in pdf before being handed in.
+## Homeworks
+The homeworks are simple exercises designed to help you to “get their hands in the data”. They will be available on Lola and should be handed in there. These homeworks will take the form of Jupyter notebooks, that will have to be converted in pdf before being handed in.
 
 ## Evaluation
 

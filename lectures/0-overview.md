@@ -1,11 +1,12 @@
 # Data Management
 ## Introduction
-### [Malka Guillot](https://malkaguillot.github.io/)
-### HEC Liège | <a href="https://gitlab.uliege.be/mguillot/econ2306-data-management-2021-22/">ECON2306</a>
+## [Malka Guillot](https://malkaguillot.github.io/)
+## HEC Liège | <a href="https://gitlab.uliege.be/mguillot/econ2306-data-management-2021-22/">ECON2306</a>
 
 
 <!--
 ---
+
 ## Zoom rules before we begin
 - Turn on video <i class="fas fa-video"></i> and set audio to mute <i class="fas fa-microphone-slash"></i>
 - Set zoom name to “Full Name, School, Dept/Major”(ex: “Leon Smith, ETH Computer Science”)
@@ -17,122 +18,46 @@
 <!-- .slide:  id="toc" class: left, inverse -->
 # Table of contents
 
-1. [Prologue ](#prologue)
+1. [Prologue]()
 
-2. [Logistics](#logistics)
+1. [Data management: why, how?](#dm)
 
-2. [General motivation](#motivation)
+2. [(Big) data](#data)
 
-3. [Tools and resources](#tools_resources)
+2. [Managing a project with data](#code)
 
-2. [Course outline](#course_outline)
+3. [Tools](#tools_resources)
 
-2. [Epilogue](#hw)
+3. [This class: overview & logistics](#logistics)
 
-Notes: my notes
-
-
---
-
-## More interaction using
-TODO: Configurer woodclap
-
---
-
-## What do you want to learn during the class?
-
-
-<div style="position:relative;  text-align: center;" >
-<iframe allowfullscreen frameborder="0" height="100%" mozallowfullscreen src="https://app.wooclap.com/events/HHQNFR/questions/61e9758ca45a831197a500c0" width="100%"></iframe>
-    <div style="position:absolute;  z-index:500;height:80%;width:100%;"></div>
-</div>
-
----
-
-<!-- .slide: id="prologue"  -->
-# Prologue:
-## (Big) **data** and (policy) **analysis**
-
-<html><div style='float:left'></div><hr color='#EB811B' size=1px width=796px></html>
-
-
---
-
-- (Big) Data can diagnose (and hopefully help solve) (policy)
-problems.
-
-
-- Visualization matters.
-
---
-
-### Police discrimination in the US
-
-- **Policy question**:
-  - assess racial disparities in policing in the United States
--  <!-- .element: class="fragment" -->
-  **Big data**:
-  - Analyze a dataset detailing nearly 100 million traffic stops conducted across the country.
-- <!-- .element: class="fragment" -->
-  **Methodo**:
-  - Use a sunset as a "veil of darkness" masks one’s race
-- <!-- .element: class="fragment" -->
-  **Result**:
-  -    Black drivers were less likely to be stopped after sunset, suggesting bias in stop decisions
-
-<div class="r-stack"><img data-src="./images/discrimination-police-us.png" style="height: 195px;" ><!-- .element: class="fragment" --></div>
-
-<p><cite><i class="fa fa-book fa-fw" aria-hidden="true"> </i>
-Pierson, E., Simoiu, C., Overgoor, J. et al.
-<a href=https://rdcu.be/cfg4x>A large-scale analysis of racial disparities in police stops across the United States.</a>
-Nat Hum Behav 4, 736–745 (2020).</cite></p>
-
-Note:
-For each window (19:00–19:15, 19:15–19:30 and 19:30–19:45), we compute the percentage of stops that involved black drivers for a series of 10-min periods before and after dusk. The figure is based on 112,938 stops of black and white drivers (35,270 during 19:00–19:15, 38,726 during 19:15–19:30 and 38,942 during 19:30–19:45), with points sized according to the total number of stops in each bin. The vertical line at t = 0 indicates dusk, at which point it is generally considered ‘dark’; we remove stops in the ~30-min period between sunset (indicated by the left-most vertical line in each panel) and dusk, as this period is neither ‘light’ nor ‘dark’. The dashed horizontal lines show the overall proportion of stops involving black drivers before and after dark, with 95% CI. For all three depicted time windows, black drivers comprise a smaller share of stopped drivers after dark, when a veil of darkness masks their race, suggestive of racial profiling
-
-''Police stops suffer from persistent racial bias and point to the value of policy interventions to mitigate these disparities.''
-
---
-
-(Big) Data can cause (or magnify) problems.
-
---
-
-### Predictive policing
-
-<div class="r-stack"><img data-src="./images/predictive-policing.png" style="height: 400px;" > </div>
-
---
-
-### Predictive policing
-
-<div class="r-stack"><img data-src="./images/predictive-policing-2.png" style="height: 400px;" > </div>
+1. [Epilogue](hw)
 
 --
 
 ## Welcome
-
-- This course focuses on applications of <bcolor> big data tools to public policy analysis </bcolor>
-
-<div class="r-stack"><img data-src="./images/policy-data.jpeg" style="height: 200px;" ></div>
-
-
-- Goals:
-  - Equip you with the standard machine learning toolkit.
-  - Put it to work on a real-world policy project.
+<div class="r-stack">
+<img src="https://www.dqglobal.com/wp-content/uploads/2017/07/Data-Management.jpg.webp" style="height: 450px;">
+ </div>
 
 
 --
 
-## What this course is, and is not
-- It is:
-  - Applied and oriented towards practice;
-  - General overview of different techniques - what they are and how to use them.
-  - Data analysis in general, not restricted to a research or a  field (economics, political science).
-  - In python.
-- It is not:
-  - Computer science. We’re not coding up models from scratch.
-  - Mathematical statistics. We’re not deriving the functions by hand.
+## Introduction: Who are we?
+
+
+|Teaching assistant| Lecturer|
+|:------:|:---:|
+| <a href=http://www.hec.ulg.ac.be/fr/faculty-recherche/faculty-and-researchers/profil/383/>Michel Coppee</a>  | <a href=https://malkaguillot.github.io/>Malka Guillot</a> |
+|<img data-src="./images/michel-coppee.jpg"  style="height: 160px;" > | <img data-src="./images/malka_small.jpg" style="height: 160px" class="center"> |
+|[michel.coppee@uliege.be](michel.coppee@uliege.be)| [mguillot@uliege.be](mguillot@uliege.be) |
+
+
+<i class="fa fa-location-arrow" aria-hidden="true"></i>
+Bât. N1 Economie (bureau 33a) <br>
+rue Louvrex 14 <br>
+4000 Liège <br>
+Belgique
+
 
 --
 
@@ -165,147 +90,152 @@ For each window (19:00–19:15, 19:15–19:30 and 19:30–19:45), we compute the
  <a href="https://twitter.com/MalkaGuillot/"><i class="fab fa-twitter" ></i></a>
  <a href="https://www.linkedin.com/in/malka-guillot-408b5361/"><i class="fab fa-linkedin" ></i></a>
 
-
 --
 
-## Who are you? Results from pre-class survey
-TODO
+## Wooclap
+
 
 <div style="position:relative;  text-align: center;" >
-<iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRGFhbIXPxREBXDPpZDy_P4rzWMDuSaReFumIyXnyg4V3JBVOboEYzV1GTq7Rf_--lMgHzSdIIxoP0H/pubchart?oid=230737814&amp;format=image"></iframe>
+<iframe allowfullscreen frameborder="0" height="600px" width="600px" mozallowfullscreen src="https://app.wooclap.com/events/BEPSEL/questions/6202a57e1289bf116f5afc28" height="400px"  width="600px"></iframe>
+   <div style="position:absolute;  z-index:500;height:80%;width:100%;"></div>
 </div>
 
 
----
 
-<!-- .slide: id="logistics"  -->
-# Logistics
-<html><div style='float:left'></div><hr color='#EB811B' size=1px width=796px></html>
+
 
 --
 
-## How does the class work?
+## Introduction: You are you ?
 
-- <!-- .element: class="fragment" -->
-  <bcolor> Lectures</bcolor>: 3 hours / week  
-  - 2 hour theory
-  - 1 hour practice:
-    - coding exercises
-  - sometimes the frontier between theory and practice will be fuzzy.
-- <!-- .element: class="fragment" -->
-  <bcolor>Every week</bcolor>
-  - Thursdays
-    - Theory: 8:45-10:45 (with a 10 minute break)
-    - Practice: 11:00-12:00
-  - Where? N1a 220 (2/20) [Liège centre - Louvrex]
-  - Dates: 10.02.; 17.02.; 24.02.; 03.03.; 10.03.; 17.03.; 24.03.; 31.04.; 28.04.; 05.05.; 12.05.; 19.05.
+
+<div style="position:relative;  text-align: center;" >
+<iframe allowfullscreen frameborder="0" height="600px" width="600px" mozallowfullscreen src="https://app.wooclap.com/events/BEPSEL/questions/6202a5b3a07f0e119f298284" height="400px"  width="600px"></iframe>
 
 --
 
-## Online Course Materials
-- [lola]([Moodle](https://moodle-app2.let.ethz.ch/course/view.php?id=14461) ):
-  - Course announcement and forum
-  - Giving back homerwork
-- <!-- .element: class="fragment" data-fragment-index="2" -->
-   [Syllabus](https://docs.google.com/document/d/1eviJuOoWUjoonxS1LvQJi1kMbmkNUulJtZ31542w100)
--   <!-- .element: class="fragment" -->
-  [Github folder](https://github.com/MalkIPP/big_data_policy_2020) or [Github page](https://malkipp.github.io/big_data_policy_2021/)
-  - <!-- .element: class="fragment" -->
-      <bcolor>Slides</bcolor>: in html, also available in PDF
-      - relying on [RevealJS](https://revealjs.com/)
-  -   <!-- .element: class="fragment" -->
-      <bcolor>Coding sessions</bcolor>: in [Jupyter Notebook](https://jupyter.org/)
-      - You can use [mybinder](https://mybinder.org/) in the beginning
-
---
-
-## Evaluation Policy
-
-- **Homeworks**: should be given back as [jupyter notebooks](https://jupyter.org/) in PDF format.
-  - $4(hw) *10\textrm{ pts} + 2(hw) * 5 \textrm{ pts} -10 $ <bcolor>
-      =40%</bcolor>
--  **Participation in class & presentations** <bcolor>=5% bonus</bcolor>:
-- Course project $\rightarrow$
-
---
-
-## Course Communication
-
-- Course communication will be done through [lola's forum]()
-- I will be available
-  - During the breaks, after the class.
-
---
-
-## Teaching Assistants
-
-[Michel Coppée](https://www.uliege.be/cms/c_9054334/fr/repertoire?uid=u224042) (Michel.Coppee@uliege.be)
-
-Can answer questions about lectures, notebooks, assignments, and projects
-
---
-
-## How to reach me?
-
-- **Personal question**: face-to-face interaction > emails
-- **General interest question**: forum > email
-
-<i class="fa fa-send" aria-hidden="true"></i>
-[mguillot@uliege.be](mguillot@uliege.be)
+## What do you want to learn during the class?
 
 
-<i class="fa fa-location-arrow" aria-hidden="true"></i>
-Bât. N1 Economie (bureau 33a) <br>
-rue Louvrex 14 <br>
-4000 Liège <br>
-Belgique
+<div style="position:relative;  text-align: center;" >
+<iframe allowfullscreen frameborder="0" height="600px" width="600px" mozallowfullscreen src="https://app.wooclap.com/events/HHQNFR/questions/61e9758ca45a831197a500c0" height="400px"  width="600px"></iframe>
 
 
 ---
 
-<!-- .slide: id="motivation"  -->
-# Data management: what, for whom, why, how?
+<!-- .slide: id="dm"  -->
+# Data management: why, how?
 <html><div style='float:left'></div><hr color='#EB811B' size=1px width=796px></html>
 
+--
 
+## What is data management about?
+All processes, tools, and techniques that have to do with **working with data** :
+
+- Data management plan
+- Research data archiving
+- Metadata :
+    - = structured information that describes, explains, locates, and otherwise represents something else [data].
+
+$\rightarrow$ Allows data to be found and interpreted
+
+- *Bottom line*: data should be valid, shared and contextualized within (research) communities
 
 --
 
-## What? A tentative definition
+## The Data Management Plan (DMP)
+Supports Transparency and openness, by indicating:  
+  - how data will be made discoverable, accessible, and reusable
 
-DM concerns all process, tools, and techniques related to the management of data
+Important in the context of open science / governemnts:
+- So that **public investments** are transferable
 
-With the objective of exploiting the data, we need the data to be
-- consistent
-- of high inequality
-- (secured)
+But also in the context of a firm:
+- Long-term investments are key for sustainability
 
-$\Rightarrow$ This class: from acquisition of data to data analysis
+**Document that helps you manage the data lifecylce**
+
+
+Notes:
+- **DMP**:  
+  - We won't elaborate DMP: that's really not the objective of the class. But it is important to know such things exists, so that we can implement good data management practices
+- Lifecycle : useful representation
 
 --
 
-## For whom?
+## The data lifecycle
 
+<div class="r-stack"><img src=http://belgium.devoteam.com/wp-content/uploads/sites/19/2021/05/Devoteam_DataLyfecycle2.png style="width: 600px;" ></div>
+
+
+Notes:
+1. CREATION: Data collection: the life cycle of data starts with information gathering. This allows the creation of values (that do not exists yet).
+Capturing the data: Acquisition / entry / signal receipt (internet of things)
+7. DESTROY: Data cleaning : possible deletion of the data when it is no longer of use
+
+--
+
+## This class: from acquisition of data to data analysis
+
+The class focuses concepts & skills related to the management of data, that are central for the **exploitation** of data.
+
+**Goals**:
+- Equip you with the standard datascience toolkit.
+- Put it to work on a real-world project.
+
+Notes:
+The class focuses on the practical ingredients related to data (acquisition & analysis) rather than on the higher level concepts.
+
+--
+
+## Backbone of the class
+
+1. The <bcolor>skills</bcolor>:
+  - Data collection
+  - Data cleaning & operation:
+    - Pipelines
+  - Data vizualisation
+2. The <bcolor>tools</bcolor>:
+  - python
+  - git
+3. The <bcolor>concepts</bcolor>:
+  - *Project management*: documenting, sharing & managing code
+  - *Reproducibility*
+
+*Public targeted*: <bcolor>anyone using data for projects</bcolor>.
+For academics or non academics.
 - For research
 - For firms
 
-Public targeted: any students using data for projects. For academics or non academics.
-
-TODO: show some examples
+Notes:
 **Question**: Do you have some ideas of what question you would want to use data for ?
-
----
-
-<!-- .slide: id="motivation"  -->
-# General motivation
-<html><div style='float:left'></div><hr color='#EB811B' size=1px width=796px></html>
-
-
 
 --
 
-## Data management: what, why, how?
+## What this course **is**, and *is not*
+- **It is**:
+  - <bcolor>Applied</bcolor> and oriented towards practice;
+  - <bcolor>General</bcolor> overview of different techniques - what they are and how to use them.
+  - <bcolor>Data analysis</bcolor> in general, not restricted to a research or a field (economics, political science).
+  - In [python]().
+- *It is not*:
+  - <bcolor>Computer science</bcolor>. We’re not coding up models from scratch.
+  - <bcolor>Mathematical statistics</bcolor>. We’re not deriving the functions by hand.
 
+
+---
+
+<!-- .slide: id="data"  -->
+
+# (Big) data
+<html><div style='float:left'></div><hr color='#EB811B' size=1px width=796px></html>
+
+Notes:
+More on the type of data I am talking about.
+
+Of course I elude to a relatively new ovni in the world of data : the big data.
+
+But there is a continuum from small to big data, and the size is not the only characteristics.
 
 --
 
@@ -327,40 +257,36 @@ I have my own field of specialization, but I expect that you come with your own 
 
 $\rightarrow$ invest the tools learnt during the class to invent new visualization important for your field
 
+--
+
+## Examples of business applications
+
+- Decision making:
+  - What judges can be replaced by robots?
+  - Using algorithms to help diagnose cancer / propose the most effective treatment
+
+- Growth hacking:
+  - Identify markets where the investments have the highest returns
+- Forecasting:
+  - Predict sales
 
 --
 
-## # of Wikipedia Pages, 2001-2020
-
-<div class="r-stack"><img data-src="./images/wikipedia-pages.png" style="height: 500px;" ></div>
-
-Source: [Wikimedia Statistics](https://stats.wikimedia.org/#/en.wikipedia.org/content/pages-to-date/normal|line|2001-01-01~2021-03-01|page_type~content|monthly). The running count of all pages created, excluding pages being redirects.
-
---
-
-## What is big data?
+## What is (big) data?
 
 <div class="r-stack"><img data-src="./images/big-data-illustration.jpeg" style="width: 400px;" ></div>
 
 --
 
-### Expert Survey (UC Berkeley, 2014)
+## Expert Survey (UC Berkeley, 2014)
 
 <div class="r-stack"><img data-src="./images/bigdata-worldcould.png" style="width: 600px;" ></div>
 
-Image by Jennifer Dutcher, source: https://datascience.berkeley.edu/what-is-big-data
+Image by Jennifer Dutcher, [source]{https://datascience.berkeley.edu/what-is-big-data}
 
 --
 
-### Conclusion
-
-<div class="r-stack"><img data-src="./images/big-data-cartoon.jpeg" style="width: 600px;" ></div>
-
-Source: [Ingeniero Dilbert](https://twitter.com/dilbert_ing/status/636499650560835584)
-
---
-
-### What is big data?
+## What is (big) data?
 
 - **Variety** of types/formats of data
   - Structured
@@ -375,100 +301,100 @@ $\rightarrow$ Use programming and statistics to extract value
 
 --
 
-### Big data in the Social sciences
+## Big data in the Social sciences
 
 - From web applications and digitization of economic and political processes
 - <bcolor> Volume </bcolor>: can be big, but usually smaller than in natural sciences
-- <bcolor> Variety </bcolor> and <bcolor> variability</bcolor>: often important and challengin
+- <bcolor> Variety </bcolor> and <bcolor> variability</bcolor>: often important and challenging
   - Various resources
   - Data generation from 'the real world'
 - But usually no streaming applications (<bcolor>velocity</bcolor> not that much of an issue)
 
 --
 
-### New tools and methods
+## New tools and methods
 
-- **Data collection**: API, Webscraping
-- **Analysis**: text analysis, machine learning
+- <bcolor>Data collection</bcolor> API, Webscraping
+- <bcolor>Analysis</bcolor> text analysis, machine learning
   - Data can be tall (many observations) or **wide/fat** (many regressors)
   $\Rightarrow$ Machine learning helps to extract the relevant information
 
-- **Visualization**: maps, social networks, web appeals
+- <bcolor>Visualization</bcolor> maps, social networks, web applications
 
 --
 
-### Big data ecosystem
+## Big data ecosystem
 
 <div class="r-stack"><img data-src="./images/2020-Data-and-AI-Landscape-Preview-1.png" style="width: 800px;" ></div>
 
 Source: ‘Big Data Landscape (2020)’ from  http://mattturck.com, [high definition image](http://mattturck.com/wp-content/uploads/2020/09/2020-Data-and-AI-Landscape-Matt-Turck-at-FirstMark-v1.pdf)
 
 
---
+---
 
-## What is machine learning?
-
-More on this in the statistical learning theory lecture.
-
---
-
-## Why is it useful to policy analysis?
+<!-- .slide: id="code"  -->
+# Managing a project with data
+<html><div style='float:left'></div><hr color='#EB811B' size=1px width=796px></html>
 
 --
 
-## Empirical policy research (1)
-- Standard causal inference framework
-- <!-- .element: class="fragment" --> Relying on a <b> counterfactual </b>: what happens with and without a policy
-- <!-- .element: class="fragment" -->
-The <em>art of the counterfactual</em>  intertwine with applied econometrics
+## The importance of good coding practices
 
- <p><i class="fa fa-arrow-right" aria-hidden="true"></i>  many <bcolor>policy applications where causal inference is not central</bcolor>, or even necessary</p><!-- .element: class="fragment" -->
+<div class="r-stack"><img src=https://www.explainxkcd.com/wiki/images/6/68/wanna_see_the_code.png style="width: 800px;" ></div>
 
---
+Source: [xkcd 2138](https://xkcd.com/2138/)
 
-## (Toy) example
-Policy maker facing a drought must decide whether to:
-
-1. <p style="font-size: .9em"><!-- .element: class="fragment" data-fragment-index="1"--> Invest in a rain dance to increase the chance of rain<p>
-
-  <p style="font-size: .8em"><!-- .element: class="fragment" data-fragment-index="2"--><bcolor>Causality</bcolor>: do rain dances cause rain?<p>
-
-2. <p style="font-size: .9em"><!-- .element: class="fragment" data-fragment-index="3" --> Take an umbrella to work to avoid getting wet on the way home?<p>
-
-  <p style="font-size: .8em"><!-- .element: class="fragment" --><bcolor>Prediction</bcolor>: is the chance of rain high enough to merit an umbrella?<p>
-
-<p><cite><i class="fa fa-book fa-fw" aria-hidden="true"> </i> Kleinberg, J., Ludwig, J., Mullainathan, S. and Obermeyer, Z.,2015.  <a href=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4869349/pdf/nihms776714.pdf>Prediction policy problems</a>. American Economic Review, 105(5), pp.491-95.</cite></p>
-
+Notes:
+If the code is readable, it becomes a **dead body** => it is not usable anymore, it becomes a problem
 
 --
 
-## Conclusion:
-### <bcolor>Why relying on BD and ML appeals to policy analysis?</bcolor>
+## Readability of the code
 
-1. <!-- .element: class="fragment" --> Not all policy problems are causal inference problems, some require <b>prediction</b>
-  <p><!-- .element: class="fragment" --><i class="fa fa-arrow-right" aria-hidden="true"></i> ML and BD <bcolor>supplement</bcolor> standard econometrics</p>
-2. <!-- .element: class="fragment" --> Some data pose <b>new empirical challenges</b>
-  <p><!-- .element: class="fragment" --><i class="fa fa-arrow-right" aria-hidden="true"></i> ML and BD <bcolor>complement</bcolor> standard econometrics</p>
+The <bcolor>Pep 8</bcolor> convention: [Style guide for python code](https://www.python.org/dev/peps/pep-0008/)
+
+$\rightarrow$ makes it easier (possible) to understand a code of someone else (= you + 2 day!)
+
+- **Naming**
+  - Variables: underscores & small letters `snake_case`
+  - Constants: underscores & capital letters
+  - Classes `CapitalizedCase`
+- **Code layout**
+  - Blank lines
+  - Maximum line length & line breaking
+- **Comments**
+  - Should be useful (explain code) but not obvious
+  - Not on o code line
+  - Documentation Strings (Using docsstrings)  -> mainly for functions
+
+
+(A nice [reference](shttps://realpython.com/python-pep8))
+
+Notes:
+The right amount of comments: you can understand the code, but there is not too much information. Beware you have to modify the comments when you modify the code...
 
 --
 
-## Learning objectives:
+## Reproducibility principle
 
-1. Technical skills
-  - <div style="font-size:.8em"> Introduction data analysis and visualization in python: pandas, web-scraping, API, web-app </div>
-  - <div style="font-size:.8em"> Programming skills necessary to train and assess the performance of the most popular machine learning algorithms</div>
+The results of the project should be *reproducible* by someone else in the future:
+  - this is a basic scientific principle... but too often forgotten
 
-<!-- .element: class="fragment" -->
-2. Substantive knowledge
-  - <div style="font-size:.8em">Statistical theory underlying common supervised and unsupervised machine learning algorithms.</div>
-  - <div style="font-size:.8em">When and how to apply different types of machine learning algorithms to policy issues</div>
+<bcolor>WANTED</bcolor>:
+- maintaining a single master file of the data
+- [version control]() of the code
+- [Readme]() of the project
+- document the code (« comments ») & the data (« metadata »)
+- controlled coding environment
 
-<!-- .element: class="fragment" -->
+[Next lecture]()
+
+<bcolor>$\rightarrow$ The course project satisfy by the reproducibility principle</bcolor>
 
 ---
 
 <!-- .slide: id="tools_resources" -->
-# Tools and resources
+# Tools
 <html><div style='float:left'></div><hr color='#EB811B' size=1px width=796px></html>
 
 --
@@ -476,13 +402,8 @@ Policy maker facing a drought must decide whether to:
 ## Your programming background
 
 <div style="position:relative;  text-align: center;" >
-  <a href="https://app.sli.do/event/tevwuniu" target="_blank">
-    <div style="position:absolute;  z-index:500;height:245px;width:100%;"></div>
-    <iframe src="https://app.sli.do/event/tevwuniu/embed/polls/1bb3f5ad-829d-486c-8be3-17c642e0f2af" width="300" height="400"></iframe>
-  </a>
+<iframe allowfullscreen frameborder="0" height="600px" width="600px" mozallowfullscreen src="https://app.wooclap.com/events/BEPSEL/questions/6202a8c6dd619011842d6615" height="400px"  width="600px"></iframe>
 
-  https://app.sli.do/event/tevwuniu
-</div>
 
 --
 
@@ -529,112 +450,206 @@ Spyder & Jupyter notebook are two development environments from the Anaconda set
 Notes:
 See downlowding instruction and small video
 
---
-
-## Course materials are on [Github](https://github.com/MalkIPP/big_data_policy_2021)
-
-- [Git](https://git-scm.com)
-  - Git is a distributed version control system.
-  - Dropbox + track changes, optimized for codes
-- [GitHub](https://github.com/) (≠ Git)
-  - = Online hosting platform that provides an array of services built on top of the Git system.
-  - Makes life easier
-
->Github is also great for scientific research and for collaboration on code.
 
 --
 
-## Why Git and Github?
+## Main python packages
 
-<img data-src="./images/phd-comics-doc.gif"  style="height: 550px; position:relative;     margin-left: auto;margin-right: auto;display: block" >
+| Task | Package |
+|:------:|:---:|
+| Webscraping | beautiful soup |
+| Data management  | <img src=https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/600px-Pandas_logo.svg.png style="width: 80px;background-color: #e5e0d8"> |
+| Visualisation | <img src=https://steemitimages.com/1280x0/https://res.cloudinary.com/hpiynhbhq/image/upload/v1521146556/frskntefqfbebukx3l1m.png style="width: 80px"> |
+| Web application | <img src=https://rapids.ai/assets/images/Plotly_Dash_logo.png style="width: 80px;background-color: #e5e0d8"> |
+| Machine Learning | <img src=https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/440px-Scikit_learn_logo_small.svg.png style="width: 80px;background-color: #e5e0d8"> |
+| Natural language processing | NLTK & <img src=https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/SpaCy_logo.svg/440px-SpaCy_logo.svg.png style="width: 80px;background-color: #e5e0d8"> |
 
-Also [git vs. Dropbox from a researcher's perspective](https://michaelstepner.com/blog/git-vs-dropbox/)
-
-
---
-
-## How to interact with the materials?
-
-1. **Simple** -> Just use the online GitHub interface to
-   - Access the materials
-   - Amend the students' presentation signing sheet
-2. **Advanced**
-   - Download [git](https://git-scm.com/downloads)
-   - Create an account on [GitHub](https://github.com/)
-   - Go through this [simple guide](https://rogerdudler.github.io/git-guide/)
-   - In case it goes wrong: http://ohshitgit.com/
-
-You can use [mybinder](https://mybinder.org/v2/gh/MalkIPP/big_data_policy_2021/main) to launch the notebooks from Github
-
---
-
-## <i class="fa fa-book fa-fw" aria-hidden="true"></i>Main textbook references<i class="fa fa-book fa-fw" aria-hidden="true"></i>
-
-  <div class="image-float">
-    <p style="position: relative; left: 0px; top: 5;">
-      <a href="./images/homl-python.jpeg"><img src="./images/homl-python.jpeg" width="100px"/></a></p>
-      <a href="./images/homl-python.jpeg"><img src="./images/ISL.jpeg" width="100px"/></a></p>
-    </div>
-
-<div class="content-aside">
- <p>Geron,  <a href="https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/">Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow</a>
-</p>
- <p> James, Witten, Hastie, and Tisbshirani (JWHT), <a href="https://www.statlearning.com/">Introduction to statistical learning with applications in R</a>
- </p>
-
-</div>
-
---
-
-## Other references
-
-Gaillac and L’Hour, [ Machine Learning for Econometrics](https://drive.google.com/file/d/1L_iervUBKj3RsXHLEGOtAFlyHEHpmyT4/view).
 
 ---
 
-<!-- .slide: id="course_outline"-->
-# Course outline
+<!-- .slide: id="logistics"  -->
+# This class: overview & logistics
 <html><div style='float:left'></div><hr color='#EB811B' size=1px width=796px></html>
 
+--
+
+## How does the class work? Spirit
+Sessions are designed to be [interactive]()
+
+- mix of live *coding* & *exercises*
+- we want to get you comfortable using your computing environment to solve problems
+  - bring your laptop!
+  - we expect you have completed the installation guide and have all software installed.
+  - ask questions!
 
 --
 
-## 0. Theoretical context
+## How does the class work? Details
 
-- **W1 & W2**: Statistical learning theory
+- <!-- .element: class="fragment" -->
+  <bcolor> Lectures</bcolor>: 3 hours / week  
+  - 2 hour theory
+  - 1 hour practice:
+    - coding exercises
+  - sometimes the frontier between theory and practice will be fuzzy.
+- <!-- .element: class="fragment" -->
+  <bcolor>Every week</bcolor>
+  - Thursdays
+    - Theory: 9:00-10:25 (with a 10 minute break)
+    - Practice: 10:35-12:00
+  - Where? N1a 220 (2/20) [Liège centre - Louvrex]
+  - Dates: 10.02.; 17.02.; 24.02.; 03.03.; 10.03.; 17.03.; 24.03.; 31.04.; 28.04.; 05.05.; 12.05.; 19.05.
+
+
+--
+
+## Online Course Materials
+- [Syllabus](https://docs.google.com/document/d/1eviJuOoWUjoonxS1LvQJi1kMbmkNUulJtZ31542w100)
+- <!-- .element: class="fragment" data-fragment-index="2" -->
+ [lola]([Moodle](https://moodle-app2.let.ethz.ch/course/view.php?id=14461) ):
+  - Course announcement and forum
+  - Giving back homerwork
+-   <!-- .element: class="fragment" -->
+  [Github folder](https://github.com/MalkIPP/big_data_policy_2020) or [Github page](https://malkipp.github.io/big_data_policy_2021/)
+  - <!-- .element: class="fragment" -->
+      <bcolor>Slides</bcolor>: in html, also available in PDF
+      - relying on [RevealJS](https://revealjs.com/)
+  -   <!-- .element: class="fragment" -->
+      <bcolor>Coding sessions</bcolor>: in [Jupyter Notebook](https://jupyter.org/)
+      - You can use [mybinder](https://mybinder.org/) in the beginning
+
+--
+
+## [Evaluation Policy]
+
+- <bcolor>Homeworks</bcolor>:
+  - should be given back as [jupyter notebooks](https://jupyter.org/) in PDF format on [lola]().
+  - $3 \textrm{h w} * 5%$ <bcolor> =15%</bcolor>
+-  **Participation in class & presentations** <bcolor>= 5% bonus</bcolor>:
+- <bcolor>Course project = 85%</bcolor>
+
+The homeworks are simple exercises designed to help students to “get their hands in the data & code”.
+
+--
+
+## [Course project] Objectives
+
+- The <bcolor>basics</bcolor>:
+
+  - End-to-end data project using Python  
+    - From collection to vizualisation
+
+  - Group project (2 people; 3 of odd no. of students)
+
+- Use what you learn in this course to <bcolor>solve a non-trivial real-world question/problem</bcolor> using a graphical analysis
+
+  - Code must be in split into meaningful sub-files
+
+  - Solution must be submitted using GitHub
+
+  - Web application, that should be deployed online
+
+--
+
+## [Course project] Web application deployed online???
+
+$\rightarrow$ Some examples in various sector:
+
+- Finance:  
+  - The [Yield Curve](https://www.nytimes.com/interactive/2015/03/19/upshot/3d-yield-curve-economic-growth.html?mtrref=dash.gallery&assetType=PAYWALL)
+- Health
+  - [Opioid epidemic in the US](https://dash.gallery/dash-opioid-epidemic/)    
+- Transportation:
+	- [Uber rides](https://dash.gallery/dash-uber-rides-demo/)
+- [Energy consumption](https://dash.gallery/dash-peaky-finders/)
+- https://xkcd-data.herokuapp.com/  
+- [Research project](https://payroll-tax-inequality-app.herokuapp.com/)
+
+$\rightarrow$ Be creative, have fun!
+
+Notes:
+- <bcolor>Energy consumption</bcolor> if you want to merge DM + TS
+- <bcolor>XKCD</bcolor> My favorite one!
+
+--
+
+## What about you?
+
+1 minute to think about a potential field of application.
+
+- Present yourself
+
+- Specify 1 or 2 domain of interest with possible data analysis
+  - Can be academic: green finance, agile management
+  - or not: sport, important topic
+
+Notes:
+I would like to think about what ideas you would want to bring to the class
+
+--
+
+## [Course project] Requirements
+
+- Data:
+  - Original data collection
+
+- Analysis :
+  - 2 tables and 2 Figures (using different commands)
+
+- Deployment:
+  - The main output should be a dash page that you develop on Herokuapp
+
+- Submission format:
+  - Invite [@malkaguillot](https://github.com/malkaguillot) and [@MichelCop](https://github.com/MichelCop) to collaborate on your GitHub repository by the due date.
+
+--
+
+## [Course project] Evaluation: 85% =
+
+- [Project management]() <bcolor>= 15%</bcolor>
+  - reproducibility, github, readme
+- [Project relevance]() <bcolor>= 10%</bcolor>
+  - Does the project respond to an interesting/important question?
+- Quality of the [visualisation]() <bcolor>= 20%</bcolor>
+  - Choice of the graphical representations & colors
+- [Technical]() dimension <bcolor>= 15%</bcolor>
+  - Is the project using advanced tools/techniques?
+- [Oral]() presentations <bcolor>= 25%</bcolor>
+  - ML1: Project idea & scrapping methodology <bcolor>= 5%</bcolor>
+  - ML2: Visualisation plan <bcolor>= 5%</bcolor>  
+  - ML3: Final presentation <bcolor>= 15%</bcolor>  
 
 
 --
 
-## 1. Tools
-- **W1**:
-  - Overview + tools
-  - HW on the basics of python and jupyter notebook
+## Course Communication
+- Us $\rightarrow$ you
+  - Course communication will be done through [lola's forum]()
 
-- **W2**: Webscraping and API
+- You $\rightarrow$ us
+  - We will be available
+    - During the breaks, after the class.
+    - Michel Copée can answer questions about lectures, notebooks, assignments, and projects
 
-- **W13**: Web-app application (dash)
-
-
---
-
-## 2. Machine Learning
-- **W3+5**: Unsupervised ML
-- **W4+6**: Supervised ML
-- **W7**: Advanced ML
-- **W8+10**: Text as data
-- **W9**: Advanced ML: Working with time series
+  - **Personal question**:
+    - face-to-face interaction > email
+  - **General interest question**:
+    - forum > email
 
 --
 
-## 3. Causal inference designs
-- **W11**: Causal analysis framework
-- **W12**: Synthetic control methods
+## <i class="fa fa-book fa-fw" aria-hidden="true"></i>References?<i class="fa fa-book fa-fw" aria-hidden="true"></i>
+
+No general texbook. Specific references will be given when corresponding subjects are tackled.
+
+- [Introduction](https://pp4rs.github.io/pp4rs-python/intro.html) to python, pandas, plotting
+
+- [Stackoverflow](https://stackoverflow.com/): all the answers are there, but you have to ask the right question. 
 
 ---
 
 <!-- .slide: id="hw"-->
-# For next week
+# Epilogue: for next week
 <html><div style='float:left'></div><hr color='#EB811B' size=1px width=796px></html>
 
 
@@ -644,9 +659,9 @@ Gaillac and L’Hour, [ Machine Learning for Econometrics](https://drive.google.
 
 - See installation guide on lola
 - Install [Anaconda](https://www.anaconda.com/products/individual), try out to run python in a Jupyter notebook and spyder
-- Basics of python's syntax: [Learn Python](https://www.learnpython.org/)
-  - less `Classes and Objects` + `Modules and Packages`.
 - Wait for next week's introduction by Michel !
+  - Basics of python's syntax: [Learn Python](https://www.learnpython.org/)
+    - less `Classes and Objects` + `Modules and Packages`.
 
 --
 
