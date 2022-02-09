@@ -408,10 +408,6 @@ Git doesn’t require a remote repository. You can run it 100% on your computer,
 - You can push all your branches to the remote repository, or only some of them
 - Big companies often have an internal git server
 
---
-
-## Pusing to the remote directory
-
 
 ---
 
@@ -442,6 +438,12 @@ This is what happens between your computer (local) and your repository (remote).
 
 --
 
+## Pushing to the remote repository (GitHub Desktop)
+<img data-src="./images/github-push.png" style="height: 250px; position:relative;     margin-left: auto;margin-right: auto;display: block;background-color: #e5e0d8" >
+Sending my commits to the internet!
+
+--
+
 ## Create a remote repository
 <img data-src="./images/github-new-repo.png" style="height: 250px; position:relative;     margin-left: auto;margin-right: auto;display: block" >
 
@@ -456,6 +458,19 @@ This is what happens between your computer (local) and your repository (remote).
 
 --
 
+# The README.md
+
+- Very important file!
+  - Objective: communicate important information about your project
+- A markdown file
+- Markdown?= lightweight markup language
+  - [The guide](https://www.markdownguide.org/getting-started/)
+  - [The syntax](https://www.markdownguide.org/basic-syntax/)
+
+Not only useful for README: for eg., these slides are written in markdown!
+
+--
+
 ## Basic work: clone or fork ?
 
  <img data-src="./images/git-clone-fork.png" style="height: 500px; position:relative;     margin-left: auto;margin-right: auto;display: block;background-color: #e5e0d8" >
@@ -466,12 +481,11 @@ This is what happens between your computer (local) and your repository (remote).
 
 <img data-src="./images/github-clone.png" style="height: 500px; position:relative;     margin-left: auto;margin-right: auto;display: block;background-color: #e5e0d8" >
 
-
 --
 
 ## Git Challenge 1
 
-- Create an example repository on your GitHub account.
+- Create an example repository on your GitHub account (including a readme).
 
 - git clone this repository to your computer. Go to this directory.
 
@@ -519,6 +533,11 @@ Simpler if the upstream repository is the one from the class (mine) and note you
 
 --
 
+## Want more of this?
+Let's learn one day how to use the command line interface!
+
+--
+
 ## How to interact with the materials?
 
    - Set up GitHub
@@ -528,13 +547,28 @@ Simpler if the upstream repository is the one from the class (mine) and note you
    - Work in the *sandbox* folder
     - this way, you can fetch my updates
 
-
 --
 
 ## References
 - Extensive git manual: https://happygitwithr.com/
 - [git - the simple guide](https://rogerdudler.github.io/git-guide/)
-- gitlab cheatsheet https://about.gitlab.com/images/press/git-cheat-sheet.pdf
+- github cheatsheet https://education.github.com/git-cheat-sheet-education.pdf
 - interactive tutorial https://gitimmersion.com/index.html
 - interactive tutorial on git branching https://learngitbranching.js.org/?locale=fr_FR
 - In case it goes wrong: http://ohshitgit.com/
+
+
+--
+
+## For next week:
+
+- Get confortable with using <bcolor>Git(Hub)</bcolor>
+  - practice with the challenges
+  - go over references
+  - work on the interactive tutorials
+- <bcolor>Python</bcolor> installation
+  - Install [Anaconda](https://www.anaconda.com/products/individual), try out to run python in a Jupyter notebook and spyder
+  - See installation guide [link](https://dox.uliege.be/index.php/s/nDh7bKGWhriRor2)
+  - Wait for next week's introduction by Michel!
+    - Basics of python's syntax: [Learn Python](https://www.learnpython.org/)
+      - less `Classes and Objects` + `Modules and Packages`.

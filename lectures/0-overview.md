@@ -6,18 +6,13 @@
 
 <!--
 ---
-
-## Zoom rules before we begin
-- Turn on video <i class="fas fa-video"></i> and set audio to mute <i class="fas fa-microphone-slash"></i>
-- Set zoom name to “Full Name, School, Dept/Major”(ex: “Leon Smith, ETH Computer Science”)
-- Say “hi” in the chat
--->
+exportation :
+decktape --chrome-arg=--disable-web-security 0-overview.html 0-overview.pdf -s 1024x768
 
 ---
 
 <!-- .slide:  id="toc" class: left, inverse -->
 # Table of contents
-
 1. [Prologue]()
 
 1. [Data management: why, how?](#dm)
@@ -131,7 +126,6 @@ Belgique
 
 ## What is data management about?
 All processes, tools, and techniques that have to do with **working with data** :
-
 - Data management plan
 - Research data archiving
 - Metadata :
@@ -189,7 +183,6 @@ The class focuses on the practical ingredients related to data (acquisition & an
 --
 
 ## Backbone of the class
-
 1. The <bcolor>skills</bcolor>:
   - Data collection
   - Data cleaning & operation:
@@ -260,7 +253,6 @@ $\rightarrow$ invest the tools learnt during the class to invent new visualizati
 --
 
 ## Examples of business applications
-
 - Decision making:
   - What judges can be replaced by robots?
   - Using algorithms to help diagnose cancer / propose the most effective treatment
@@ -522,13 +514,13 @@ Sessions are designed to be [interactive]()
 
 ## [Evaluation Policy]
 
-- <bcolor>Homeworks</bcolor>:
+- <bcolor>Problem sets</bcolor>:
   - should be given back as [jupyter notebooks](https://jupyter.org/) in PDF format on [lola]().
   - $3 \textrm{h w} * 5%$ <bcolor> =15%</bcolor>
 -  **Participation in class & presentations** <bcolor>= 5% bonus</bcolor>:
 - <bcolor>Course project = 85%</bcolor>
 
-The homeworks are simple exercises designed to help students to “get their hands in the data & code”.
+The problem sets are simple exercises designed to help students to “get their hands in the data & code”.
 
 --
 
@@ -649,19 +641,9 @@ No general texbook. Specific references will be given when corresponding subject
 ---
 
 <!-- .slide: id="hw"-->
-# Epilogue: for next week
+# Epilogue
 <html><div style='float:left'></div><hr color='#EB811B' size=1px width=796px></html>
 
-
---
-
-## Python
-
-- See installation guide on lola
-- Install [Anaconda](https://www.anaconda.com/products/individual), try out to run python in a Jupyter notebook and spyder
-- Wait for next week's introduction by Michel !
-  - Basics of python's syntax: [Learn Python](https://www.learnpython.org/)
-    - less `Classes and Objects` + `Modules and Packages`.
 
 --
 
