@@ -19,11 +19,17 @@
 
 <!--
 Réfernce :
-- manuel git : https://happygitwithr.com/
+
 - lecture git (but with RStudio) => Grant Delmott
 - Aniket : https://github.com/dlab-berkeley/Computational-Social-Science-Training-Program/blob/master/Reproducible%20Data%20Science/GitHub%20Intro.md
 - slides : https://www.frankpinter.com/notes/git-for-economists-presentation.pdf
+
+For students:
+- manuel git : https://happygitwithr.com/
 - gitlab cheatsheet https://about.gitlab.com/images/press/git-cheat-sheet.pdf
+- interactive tutorial https://gitimmersion.com/index.html
+- interactive tutorial git branching https://learngitbranching.js.org/?locale=fr_FR
+
 -->
 
 Notes:
@@ -110,11 +116,38 @@ Notes:
 This type of version control, where you put dates or number of things is not efficient:
 - very hard to (collectively) remember what caused the change of version
 - even harder to keep track of the correction of a coding error (which versions are right)?
-- Maybe you introduced a new mistake !
+- Maybe you introduced a new mistake !  
 
 --
 
-## Git(Hub) solves this problem
+## [CCL] Version control system
+
+Enables <bcolor>coordinatation</bcolor> $\rightarrow$ no code change is lost or accidentally overwriten.
+
+Provides an organized <bcolor>sharing</bcolor> platform $\rightarrow$ *open source* & documentation
+
+$\Rightarrow$ key tool from our <bcolor>project management</bcolor> perspective
+
+$\Rightarrow$ widely used in a companies / not enough in research:
+
+- Software development
+- Scientific researcher
+- Anything involving coding (even latex)
+
+
+Notes:
+- [Central]() role of VC in global software development
+- [Research]() : Git(Hub) helps to operationalize the ideals of **open science** and **reproducibility**.
+
+---
+
+<!-- .slide: id="git"  -->
+# Git(Hub)
+<html><div style='float:left'></div><hr color='#EB811B' size=1px width=796px></html>
+
+--
+
+## Git(Hub): a solution
 
 - [Git](https://git-scm.com/):  
  <!-- .element: class="fragment" data-fragment-index="1" -->
@@ -122,6 +155,8 @@ This type of version control, where you put dates or number of things is not eff
   - Git is a <bcolor>distributed version control system</bcolor>. *(Wait, what?)*
 
   - *Okay, try this:* Imagine if Dropbox and the "Track changes" feature in MS Word had a baby. Git would be that baby.
+
+  - most popular *open source* version control system out there.
 
   <!-- .element: class="fragment" data-fragment-index="1" -->
 
@@ -131,33 +166,66 @@ This type of version control, where you put dates or number of things is not eff
 
 - [GitHub](https://github.com/)   <!-- .element: class="fragment" data-fragment-index="2" -->
 
-  - It's important to realize that Git and GitHub are distinct things.
-
   - GitHub = <bcolor>online hosting platform</bcolor> that provides an array of services built on top of the Git system. <!-- .element: class="fragment" data-fragment-index="2" -->
     - (Similar platforms include Bitbucket and GitLab.)
 
   <!-- .element: class="fragment" data-fragment-index="2" -->
 
-We don't *need* GitHub to use Git... But it will make our lives so much easier.
+--
+
+## Git vs. Github
+
+- It's important to realize that Git and GitHub are distinct things.
+
+- We don't *need* GitHub to use Git... But it will make our lives so much easier.
+
 $\rightarrow$ There is a learning curve, but I promise you it's worth it.
 
   <!-- .element: class="fragment" data-fragment-index="3" -->
 
---
-
-## Git(Hub) for:
-
-- Software development
-
-- Scientific researcher
-
-- Anything involving coding (even latex)
-
 <img data-src="./images/git_github.jpg"  style="height: 400px; position:relative;     margin-left: auto;margin-right: auto;display: block" >
 
 Notes:
-- [Central]() role of VC in global software development
-- [Research]() : Git(Hub) helps to operationalize the ideals of **open science** and **reproducibility**.
+- **Git** helps to coordinate so that no code change is lost or accidentally overwriten.
+
+- **Git** solves the version control problem, **GitHub** solves the code repository problem.
+
+
+--
+
+## Git model
+
+1. You do work in your <bcolor>working directory</bcolor>
+2. Then you add it to your <bcolor>staging area</bcolor>
+2. Once you've staged [all you changes for one discrete task](), <bcolor>commit</bcolor> a snapshot of the staging area
+3. If you have a remote repository, <bcolor>push your commit</bcolor>
+
+<img data-src="./images/git-local-remote.webp" style="height: 400px; position:relative;     margin-left: auto;margin-right: auto;display: block; background-color: #e5e0d8" >
+
+--
+
+## Commits: saving a snapshop
+"One discrete task" = a collection of changes, across multiple files (or not), that does *one thing*.
+
+Examples:
+- Change the formatting of a variable from string to numeric, and treat it properly across multiple scripts
+- Change your regression specification in code, in the output, and in your paper and supporting documentation
+- Add a new function
+
+--
+
+## Commit message
+Examples:
+- “Change the formatting of start date variable from string to date format”
+- “Add year dummies to regression specification”
+
+$\rightarrow$ The more detail, the more your future self will thank you.
+
+--
+
+## Commit: example
+<img data-src="./images/commit-example.png" style="height: 550px; position:relative;     margin-left: auto;margin-right: auto;display: block; background-color: #e5e0d8" >
+
 
 ---
 
@@ -165,12 +233,6 @@ Notes:
 # Getting started on a project
 
 <html><div style='float:left'></div><hr color='#EB811B' size=1px width=796px></html>
-
-1. Install [Git](https://git-scm.com/downloads) (Linux, Mac, Windows) if not already installed
-
-2. Git comes with a command line interface (powerful!).
-
-3. You might want to add a *graphical interface* to make things easier
 
 --
 
@@ -182,5 +244,50 @@ Notes:
 <img data-src="./images/github sign up.png"  style="height: 400px; position:relative;     margin-left: auto;margin-right: auto;display: block" >
 
 Navigate to GitHub's homepage. Navigate to "Sign Up" in the top right hand side of the page.
+
+--
+
+## Getting started with Git(Hub)
+
+1. Install [Git](https://git-scm.com/downloads) (Linux, Mac, Windows) if not already installed
+
+2. Git comes with a command line interface (powerful!).
+
+3. You might want to add a *graphical interface* to make things easier:
+  - [GitHub desktop](https://desktop.github.com/)
+
+--
+
+## Your first repository
+
+
+--
+
+## How to interact with the materials?
+
+1. **Simple** -> Just use the online GitHub interface to
+   - Access the materials
+   - Amend the students' presentation signing sheet
+2. **Advanced**
+   - Download [git](https://git-scm.com/downloads)
+   - Create an account on [GitHub](https://github.com/)
+   - Go through this [simple guide](https://rogerdudler.github.io/git-guide/)
+   - In case it goes wrong: http://ohshitgit.com/
+
+You can use [mybinder](https://mybinder.org/v2/gh/MalkIPP/big_data_policy_2021/main) to launch the notebooks from Github
+
+
+--
+
+## Course materials are on [Github](https://malkaguillot.github.io/ECON2206-Data-Management-2022/)
+
+- [Git](https://git-scm.com)
+  - Git is a distributed version control system.
+  - Dropbox + track changes, optimized for codes
+- [GitHub](https://github.com/) (≠ Git)
+  - = Online hosting platform that provides an array of services built on top of the Git system.
+  - Makes life easier
+
+>Github is also great for scientific research and for collaboration on code.
 
 --
