@@ -7,7 +7,7 @@
 ---
 
 <!-- .slide:  id="toc" class: left, inverse -->
-# Table of contents
+# Table of contents - TEST
 
 1. [The importance of version control ](#why)
 
