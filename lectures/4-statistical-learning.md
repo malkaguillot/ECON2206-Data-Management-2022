@@ -4,7 +4,8 @@
 ### HEC Liège | <a href="https://gitlab.uliege.be/mguillot/econ2306-data-management-2021-22/">ECON2306</a>
 
 
-<!-- exportation : decktape --chrome-arg=--disable-web-security 4-statistical-learning.html 4-statistical-learning.pdf -s 1024x768
+<!-- exportation :
+decktape --chrome-arg=--disable-web-security 4-statistical-learning.html 4-statistical-learning.pdf -s 1024x768
 --->
 
 
@@ -59,7 +60,7 @@ Notes: my notes
 
 ## References
 
-- <i class="fa fa-book fa-fw" aria-hidden="true"></i> [JWHT](https://static1.squarespace.com/static/5ff2adbe3fe4fe33db902812/t/601cc86d7f828c4792e0bcae/1612499080032/ISLR+Seventh+Printing.pdf) chap 1. & 2 & 5.1
+- <i class="fa fa-book fa-fw" aria-hidden="true"></i> [introduction to Statistical Learning](https://hastie.su.domains/ISLR2/ISLRv2_website.pdf) chap 1. & 2 & 5.1
 -  Kleinberg, Ludwig, Mullainathan, and Obermeyer (2015), ["Prediction Policy Problems."](https://www.aeaweb.org/articles?id=10.1257/aer.p20151023) American Economic Review, 105 (5), pp. 491-95.
 - Mullainathan and Spiess (2017), ["Machine Learning: An Applied Econometric Approach"]((https://pubs.aeaweb.org/doi/pdfplus/10.1257/jep.31.2.87)), Journal of Economic Perspectives, 31 (2), pp. 87-106,
 
@@ -184,12 +185,13 @@ Notes:
 - Predict $Y$ by $\hat Y =\hat f (X)$
 - When do we care about "pure prediction"?
   - $X$ readily available but $Y$ is not
-- $\hat f$ can be a **block box**:
+- $\hat f$ can be a **black box**:
   - the only concern is accuracy of the prediction
 
 Notes:
 - $\hat f = $ our estimate for $f$
 - $\hat Y$ =resulting prediction for $Y$
+
 
 --
 
@@ -201,9 +203,25 @@ Notes:
 
 $\Rightarrow \hat f$ is cannot be a **black box** anymore
 
-Notes:
 
-Add a question: using examples, identify whether the questions relate to prediction or inference paradigm
+--
+
+## Example: prediction or inference paradigm?
+
+Two policy makers :
+- one **facing a drought**:
+  - must decide whether to invest in a rain dance to increase the chance of rain.
+
+- one **seeing clouds**:
+  - must deciding whether to take an umbrella to work to avoid getting wet on the way home
+
+$\rightarrow$ Both decisions could benefit from an empirical analysis on rain
+
+*Which one relates to a causality / prediction problem?*
+
+Notes:
+- Causality: do rain dances cause rain?
+- Prediction: is the chance of rain high enough to merit an umbrella?
 
 --
 
@@ -260,8 +278,10 @@ $\hat f(X)=\hat Y$ estimated function
 $f(X)+\epsilon =\hat Y$ true function
 
 - <bcolor>Reducible error</bcolor>: $\hat f$ is used to estimate f, but not perfect
-  $\rightarrow$ accuracy can be improved by adding more features
-- <bcolor>Irreducible error</bcolor>: $\epsilon$ = all other features that can be used to predict $f$ $\rightarrow$ unobserved $\rightarrow$ irreducible
+  - Accuracy can be improved by adding more features
+
+- <bcolor>Irreducible error</bcolor>: $\epsilon$ = all other features that can be used to predict $f$
+  - Unobserved $\rightarrow$ irreducible
 
 --
 
@@ -292,7 +312,9 @@ We use observations to "teach" our ML algorithm to predict outcomes
 
 - <bcolor>Training data</bcolor>: $ \\{ (x_1,y_1), (x_2,y_2), \dots, (x_n,y_n)\\} $
 where $x_i=(x_{i1}, x_{i2}, \dots, x_{ip})^T$
-- Goal: use the training data to estimate the unknown function $f$
+
+- *Goal*: use the training data to estimate the unknown function $f$
+
 - 2 types of SL methods: <bcolor>parameteric vs. nonparametric</bcolor>
 
 --
@@ -558,7 +580,7 @@ $+$ then <bcolor>applying</bcolor> the statistical learning method to those held
 --
 
 ## Validation set approach
-- Randomly divide labeled data <bcolor>randomly</bcolor> into two parts: training and test (validation) sets.
+- Labeled data <bcolor>randomly</bcolor> into two parts: training and test (validation) sets.
 
 <div class="r-stack"><img src="https://docs.splunk.com/images/thumb/3/3b/TrainTest.png/550px-TrainTest.png
 " style="height: 400px;" > </div>
@@ -636,22 +658,6 @@ $k=5$ or $k=10$ is a good benchmark
 ## Econometrics vs. Machine Learning
 <html><div style='float:left'></div><hr color='#EB811B' size=1px width=796px></html>
 
---
-
-## The Machine learning workflow
-
-1. Look at the big picture.
-2. Get the data.
-3. Discover and visualize the data to gain insights.
-4. Prepare the data for Machine Learning algorithms.
-5. Select a model and train it.
-6. Fine-tune your model.
-7. Present your solution.
-8. Launch, monitor, and maintain your system
-
-<i class="fa fa-book fa-fw" aria-hidden="true"></i>
-Aurelien Geron, *Hands-on machine learning with Scikit-Learn & TensorFlow*, Chapter 2
-
 
 --
 
@@ -673,3 +679,19 @@ Aurelien Geron, *Hands-on machine learning with Scikit-Learn & TensorFlow*, Chap
 - **Classical computer programming**: <span style="color:#66cdaa">humans</span> input the <span style="color:#66cdaa">rules</span> and the <span style="color:#66cdaa">data</span>, and the <span style="color:#f5ae47">computer</span> provides <span style="color:#f5ae47">answers</span>.
 
 - **Machine learning**: <span style="color:#66cdaa">humans</span> input the <span style="color:#66cdaa">data</span> and the <span style="color:#66cdaa">answer</span>, and the <span style="color:#f5ae47">computer</span>  learns the <span style="color:#f5ae47">rules</span>.
+
+--
+
+## The Machine learning workflow
+
+1. Look at the big picture.
+2. Get the data.
+3. Discover and visualize the data to gain insights.
+4. Prepare the data for Machine Learning algorithms.
+5. Select a model and train it.
+6. Fine-tune your model.
+7. Present your solution.
+8. Launch, monitor, and maintain your system
+
+<i class="fa fa-book fa-fw" aria-hidden="true"></i>
+Aurelien Geron, *Hands-on machine learning with Scikit-Learn & TensorFlow*, Chapter 2
