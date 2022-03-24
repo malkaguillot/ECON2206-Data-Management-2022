@@ -25,6 +25,8 @@ The **Homework** column details the homework, that are either project's mileston
 
 * Lists of potential subjects : Maps, Creating a Github website, Replication package, Logging, Pandas and SQL, Scraping twitter, Selenium, Scrapy, Computer vision
 
+A notebook with some guidelines for using selenium can be found [here](https://github.com/malkaguillot/ECON2206-Data-Management-2022/blob/main/practice/selenium/simulated-browser.ipynb)
+
 ## Course project
 I would like you to chose a standard [research or policy or business] question that you can answer using data (eg. where are located the death from covid? Where are the cheapest beers in Liège? At what time people go to work? When and where should you go sailing?)
 
