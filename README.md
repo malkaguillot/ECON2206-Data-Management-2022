@@ -20,7 +20,7 @@ The **Homework** column details the homework, that are either project's mileston
 | 31-Mar | Unsupervised learning [html](https://malkaguillot.github.io/ECON2206-Data-Management-2022/lectures/6-unsupervised-learning.html)       [pdf](https://raw.githubusercontent.com/malkaguillot/ECON2206-Data-Management-2022/main/lectures/6-unsupervised-learning.pdf)         |  'Open house' on webscraping of project  |                     |
 | 28-Apr | Natural Language Processing [slides](https://raw.githubusercontent.com/malkaguillot/ECON2206-Data-Management-2022/main/lectures/7-text.pdf)  |  NLP [notebook](https://github.com/malkaguillot/ECON2206-Data-Management-2022/blob/main/practice/7-text-data/7-text-data.ipynb)                      | ML2: Webscraping done; starting with visualization      |
 | 05-May |  ‘Open house’ on webscraping           |  Presentation of project ideas & scraping methodology  |
-| 12-May | Visualization using dash                |   ‘Open house’ on dash visualization   |    |
+| 12-May | Visualization using dash  [notebook](https://github.com/malkaguillot/ECON2206-Data-Management-2022/blob/main/practice/8-visualization/8a-dash-application.ipynb)              |   ‘Open house’ on dash visualization   |    |
 | 19-May | ML3: Student’s presentation of the applications |                                        |                                           |
 
 * Lists of potential subjects : Maps, Creating a Github website, Replication package, Logging, Pandas and SQL, Scraping twitter, Selenium, Scrapy, Computer vision
