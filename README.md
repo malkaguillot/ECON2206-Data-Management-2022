@@ -38,7 +38,7 @@ You will develop a project abiding by the good practices taught in class. The pr
   - 4 exhibits: 2 tables and 2 Figures (using different commands)
   - The possibility to modify the visualization using button for at least one exhibit
 
-**Submission format**: Invite @malkaguillot and @michel to collaborate on your GitHub repository by the due date.
+**Submission format**: Invite @malkaguillot and @michel to collaborate on your GitHub repository by the due date (see [here](https://raw.githubusercontent.com/malkaguillot/ECON2206-Data-Management-2022/main/lectures/images/add-colaborator.png)).
 
     - This means, we expect well version controlled work.
     - a github folder with at least 5 commits (bonus if you have several development branches!)
